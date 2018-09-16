@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
           new_hash[names] = {}
         end
         if new_hash[names].has.key?(detail) == nil
-          new_hash[names](detail) = []
+          new_hash[names][detail] = []
         end
           new_hash[names][detail] << att.t_s
         end
