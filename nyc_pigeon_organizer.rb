@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
   data.each do |detail, char|
     char.each do |att, name|
       name.each do |names|
-        if new_hash.has_key? == false
+        if new_hash.has_key?(names) == false
           new_hash[names] = {}
         end
         if new_hash[names].has.key?(detail) == false
