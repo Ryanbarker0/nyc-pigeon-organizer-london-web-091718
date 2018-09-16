@@ -5,10 +5,10 @@ def nyc_pigeon_organizer(data)
   data.each do |detail, char|
     char.each do |att, name|
       name.each do |names|
-        if new_hash.has_key?(names) == false
+        if new_hash.has_key?(names) == nil
           new_hash[names] = {}
         end
-        if new_hash[names].has_key?(detail) == false
+        if new_hash[names].has_key?(detail) == nil
           new_hash[names][detail] = []
         end
           new_hash[names][detail] << att.t_s
